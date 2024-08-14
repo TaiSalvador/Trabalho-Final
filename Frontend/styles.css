@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.homepage{
+    background-color: black;
+    height: 143px;
+    flex-shrink: 0;
+
+}
+.imagemhome{
+    height: 137px;
+    width: 180px;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+.textohome{
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    width: 40%;
+
+    h4{
+        margin-bottom: 10%;
+        font-weight: 100;
+    }
+}
