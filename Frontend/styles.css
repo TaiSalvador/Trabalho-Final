@@ -15,11 +15,11 @@
     align-self: stretch;
 }
 .textohome{
-    display: inline-flex;
+    display: grid;
     justify-content: space-evenly;
     align-items: center;
     color: white;
-    width: 40%;
+    width: 42%;
 
     h4{
         margin-bottom: 10%;
