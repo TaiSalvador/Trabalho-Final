@@ -1,26 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cabelos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Espaçamento entre as imagens */
+        }
+        .rodape {
+            text-align: center;
+            flex: 1 1 calc(33.333% - 20px); /* Cada item ocupa um terço do container, menos o espaço do gap */
+            box-sizing: border-box;
+        }
+        img {
+            width: 80%; /* Imagem ocupa toda a largura do seu container */
+            height: 550px; /* Altura fixa para todas as imagens */
+            object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+            border-radius: 8px; /* Adiciona bordas arredondadas */
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
-<style>
-    img{
-        width: 335px;
-        height: 400px;
-        flex-shrink: 0;
-        margin: 158px;
-    }
-
-</style>
 <body>
     <h1>Cabelos</h1>
     
-    <h2>Cortes de cabelo feminino </h2>
-    <img src="imagens/cortefeminino.jpg">
-    <div class=" rodape">Cortes de cabelo feminino
- <button> Agendar</button>
+    <h2>Cortes de Cabelo</h2>
+    
+    <div class="container">
+        <div class="rodape">
+            <img src="imagens/cortefeminino.jpg" alt="Corte de cabelo feminino">
+            <p>Cortes de cabelo feminino</p>
+            <button>Agendar</button>
+        </div>
 
+        <div class="rodape">
+            <img src="imagens/cortemasculino.jpg" alt="Corte de cabelo masculino">
+            <p>Cortes de cabelo masculino</p>
+            <button>Agendar</button>
+        </div>
+
+        <div class="rodape">
+            <img src="imagens/corte-cabelo-infantil.jpg" alt="Corte de cabelo infantil">
+            <p>Cortes de cabelo infantil</p>
+            <button>Agendar</button>
+        </div>
+        <h2>Coloração</h2>
+    
+        <div class="container">
+            <div class="rodape">
+                <img src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.2117784:1590234005/Image-1-Artigo-2550132-1.jpg?f=default&$p$f=1467ec7" alt="Corte de cabelo feminino">
+                <p>Tintura Global</p>
+                <button>Agendar</button>
+            </div>
+    
+            <div class="rodape">
+                <img src="https://i.pinimg.com/564x/ff/9d/77/ff9d773ecf5883dae58e0d011eeb9906.jpg" alt="Corte de cabelo masculino">
+                <p>Mechas/Luzes/Balayage</p>
+                <button>Agendar</button>
+            </div>
+    
+            <div class="rodape">
+                <img src="https://img.freepik.com/fotos-premium/menina-com-cabelo-comprido-vermelho-em-um-salao-de-beleza-apos-coloracao-de-cabelo-profissional_574182-251.jpg" alt="Corte de cabelo infantil">
+                <p>Tonalização</p>
+                <button>Agendar</button>
+            </div> 
+            <h2>Tratamentos Capilares</h2>
+    
+    <div class="container">
+        <div class="rodape">
+            <img src="https://st4allthings4p4ci.blob.core.windows.net/allthingshair/allthingshair/wp-content/uploads/sites/2/2016/05/mascara-de-hidratacao-para-cabelos-oleosos-377x566.jpg" alt="Corte de cabelo feminino">
+            <p>Hidratação Profunda</p>
+            <button>Agendar</button>
+        </div>
+
+        <div class="rodape">
+            <img src="https://belabere.com.br/wp-content/uploads/2023/06/cabelo-bonito-no-processo-de-tratamento-de-queratina-900x600.jpg" alt="Corte de cabelo masculino">
+            <p> Cauterização/Reconstrução</p>
+            <button>Agendar</button>
+        </div>
+
+        <div class="rodape">
+            <img src="https://images.tcdn.com.br/img/img_prod/1132330/botox_capilar_organico_master_blend_1kg_cabelos_lisos_e_brilhantes_33_2_428413c1028864a245f19541f84676ef.jpg" alt="Corte de cabelo infantil">
+            <p>Botox Capilar</p>
+            <button>Agendar</button>
+        </div>
+        <h2>Escova</h2>
+    
+        <div class="container">
+            <div class="rodape">
+                <img src="https://i.pinimg.com/736x/15/a0/41/15a0410e1d28773fc25b18e10af74cae.jpg" alt="Corte de cabelo feminino">
+                <p>Escova Lisa/Modeladora</p>
+                <button>Agendar</button>
+            </div>
+    
+            <div class="rodape">
+                <img src="imagens/cortemasculino.jpg" alt="Corte de cabelo masculino">
+                <p>Escova Progressiva</p>
+                <button>Agendar</button>
+            </div>
+    
+            <div class="rodape">
+                <img src="imagens/corte-cabelo-infantil.jpg" alt="Corte de cabelo infantil">
+                <p> Escova Definitiva</p>
+                <button>Agendar</button>
+            </div>
+            <h2>Tratamentos Capilares</h2>
+    
+            <div class="container">
+                <div class="rodape">
+                    <img src="imagens/cortefeminino.jpg" alt="Corte de cabelo feminino">
+                    <p>Hidratação Profunda</p>
+                    <button>Agendar</button>
+                </div>
+        
+                <div class="rodape">
+                    <img src="imagens/cortemasculino.jpg" alt="Corte de cabelo masculino">
+                    <p> Cauterização/Reconstrução</p>
+                    <button>Agendar</button>
+                </div>
+        
+                <div class="rodape">
+                    <img src="imagens/corte-cabelo-infantil.jpg" alt="Corte de cabelo infantil">
+                    <p>Botox Capilar</p>
+                    <button>Agendar</button>
+                </div>
+        
+    </div>
 </body>
 </html>
