@@ -1,33 +1,27 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
-class Produto extends Model {}
+class Agendamento extends Model {}
 
-Produto.init({
+Agendamento.init({
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
     },
-    nome: {
+    datahora: {
         type: DataTypes.STRING
     },
-    descricao: {
-        type: DataTypes.TEXT
+    formadepagamento: {
+        type: DataTypes.STRING(30)
     },
-    preco: {
-        type: DataTypes.DECIMAL(10,2)
-    },
-    categoria: {
-        type: DataTypes.STRING
-    },
-    marca: {
+    funcionario: {
         type: DataTypes.STRING
     }
 }, {
     sequelize,
-    modelName: 'produtos',
+    modelName: 'agendamentos',
     timestamps: false
 });
 
-module.exports = Produto;
+module.exports = Agendamento;

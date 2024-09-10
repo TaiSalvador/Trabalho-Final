@@ -13,16 +13,10 @@ Produto.init({
         type: DataTypes.STRING
     },
     descricao: {
-        type: DataTypes.TEXT
+        type: DataTypes.TEXT(900)
     },
     preco: {
         type: DataTypes.DECIMAL(10,2)
-    },
-    categoria: {
-        type: DataTypes.STRING
-    },
-    marca: {
-        type: DataTypes.STRING
     }
 }, {
     sequelize,
