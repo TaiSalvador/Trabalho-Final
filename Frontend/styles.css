@@ -1,28 +1,43 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-.homepage{
+
+.homepage {
     background-color: black;
     height: 140px;
     flex-shrink: 0;
 
 }
-.imagemhome{
-    height: 137px;
-    width: 180px;
+
+.imagemhome {
+    height: 180px;
+    width: 250px;
     flex-shrink: 0;
     align-self: stretch;
+    line-height: 250px;
+
 }
+<<<<<<< HEAD
 .textohome{
     display: flex;
     justify-content:space-between;
     align-items:center;
+=======
+
+.textohome {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+>>>>>>> 97233e352c359fa5c27c3131dcd10e3343694c72
     color: white;
     width: 42%;
+    position: absolute;     
+    line-height: 150px;
+    font-family: Helvetica, PT Sans Narrow, sans-serif;
 
-    h4{
-        margin-bottom: 10%;
-        font-weight: 100;
+    h4 {
+        margin-bottom: 10%;    
     }
+
 }
