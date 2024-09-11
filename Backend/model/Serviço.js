@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
-class Produto extends Model {}
+class Servico extends Model {}
 
-Produto.init({
+Servico.init({
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -16,12 +16,12 @@ Produto.init({
         type: DataTypes.TEXT(900)
     },
     preco: {
-        type: DataTypes.DECIMAL(10,2)
+        type: DataTypes.DECIMAL(7,2)
     }
 }, {
     sequelize,
-    modelName: 'produtos',
+    modelName: 'servicos',
     timestamps: false
 });
 
-module.exports = Produto;
+module.exports = Servico;
