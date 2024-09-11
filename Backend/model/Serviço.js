@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
-class Servico extends Model {}
+class servicos extends Model {}
 
-Servico.init({
+servicos.init({
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -24,4 +24,4 @@ Servico.init({
     timestamps: false
 });
 
-module.exports = Servico;
+module.exports = servicos;

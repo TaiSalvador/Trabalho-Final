@@ -16,6 +16,9 @@ app.use(cors())
 
 // Importar rotas
 const produtosRoutes = require('./routes/RotasProduto');
+const agendamentosRoutes = require('./routes/RotasAgendamentos');
+const servicosRoutes = require('./routes/RotasServicos');
+const clientesRoutes = require('./routes/RotasClientes');
 
 // Usar rotas
  app.use('/api', produtosRoutes);

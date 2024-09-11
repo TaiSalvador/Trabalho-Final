@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
-class Agendamento extends Model {}
+class agendamentos extends Model {}
 
-Agendamento.init({
+agendamentos.init({
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -24,4 +24,4 @@ Agendamento.init({
     timestamps: false
 });
 
-module.exports = Agendamento;
+module.exports = agendamentos;
