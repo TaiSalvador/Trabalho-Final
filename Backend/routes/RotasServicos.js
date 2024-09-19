@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const ServicosController = require('../controller/ControladorServicos');
+const ServicosController = require('../controller/ControladorServiços');
 
 // Rota para criar um novo servicos
 router.post('/servicos', ServicosController.createServicos);

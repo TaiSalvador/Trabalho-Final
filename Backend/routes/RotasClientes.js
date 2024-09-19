@@ -1,21 +1,21 @@
 const express = require('express');
 const router = express.Router();
-const ProdutoController = require('../controller/ControladorProduto');
+const produtoController = require('../controller/ControladorProdutos');
 
 // Rota para criar um novo produto
-router.post('/produtos', ProdutoController.createProduto);
+router.post('/produtos', produtoController.createProduto);
 
 // Rota para obter todos os produtos
-router.get('/produtos', ProdutoController.getAllProdutos);
+router.get('/produtos', produtoController.getAllProdutos);
 
 // Rota para obter um produto pelo ID
-router.get('/produtos/:id', ProdutoController.getProdutoById);
+router.get('/produtos/:id', produtoController.getProdutoById);
 
 // Rota para atualizar um produto
-router.put('/produtos/:id', ProdutoController.updateProduto);
+router.put('/produtos/:id', produtoController.updateProduto);
 
 // Rota para deletar um produto
-router.delete('/produtos/:id', ProdutoController.deleteProduto);
+router.delete('/produtos/:id', produtoController.deleteProduto);
 
 // Rota para registrar entrada de estoque
 // router.post('/produtos/:id/entrada', ProdutoController.registrarEntrada);

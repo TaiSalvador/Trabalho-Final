@@ -1,4 +1,4 @@
-const Agendamentos = require('../model/Agendamentos');
+const Agendamentos = require('../model/Agendamento');
 // const EntradaEstoque = require('../models/EntradaEstoque');
 // const SaidaEstoque = require('../models/SaidaEstoque');
 

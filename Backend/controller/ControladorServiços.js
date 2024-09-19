@@ -1,4 +1,4 @@
-const Servicos = require('../model/Servicos');
+const Servicos = require('../model/Servico');
 // const EntradaEstoque = require('../models/EntradaEstoque');
 // const SaidaEstoque = require('../models/SaidaEstoque');
 

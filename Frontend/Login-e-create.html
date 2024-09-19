@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      type="x-icon"
+      href="imagens/Salão_Além_do_Espelho__1_-removebg-preview.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="Login-e-create.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+              <h1>Create Account</h1>
+              <div class="social-icons">
+                <a href="#" class="icon"><i class="bx bxl-whatsapp"></i></a>
+                <a href="#" class="icon"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="icon"><i class="bx bxl-facebook"></i></a>
+              </div>
+              <span>Or use your email for registeraintion</span>
+              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="E-mail" />
+              <input type="password" placeholder="Password" />
+              <input type="text" placeholder="cpf" /> 
+              <button>Sing Up</button>
+            </form>
+          </div>
+       
+        <div class="form-container sign-in">
+            <form>
+              <h1>Sing in</h1>
+              <div class="social-icons">
+                <a href="#" class="icon"><i class="bx bxl-whatsapp"></i></a>
+                <a href="#" class="icon"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="icon"><i class="bx bxl-facebook"></i></a>
+              </div>
+              <span>Or use your email password</span>
+              <input type="text" placeholder="E-mail" />
+              <input type="password" placeholder="Password" />
+              <a href="#">Forget yout password?</a>
+              <button>Sing In</button>
+            </form>
+          </div>
+          <div class="toggle-container">
+            <div class="toggle"></div>
+            <div class="toggle-pantel toggle-left">
+                <h1>Welcome Back!</h1>
+                <p>Enter your personal details to use of site features</p>
+                <button class="hidden" id="login">Sign In</button>
+            </div>
+            <div class="toggle-pantel toggle-right">
+                <h1>Hello!</h1>
+                <p>Register with your personal details to use of site features</p>
+                <button class="hidden" id="register">Sign Up</button>
+            </div>
+          </div>
+        </div>
+    <script src="script.js"></script>
+  </body>
+</html>

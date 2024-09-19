@@ -22,8 +22,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 5%;
+    padding: 0px 54px;
 }
+
 .logo{
     cursor: pointer;
 }
@@ -56,4 +57,7 @@ button {
 
 button:hover{
     background-color: rgb(255, 255, 255, 0.8);
+}
+.icon {
+    margin-left: -50px; /* Ajuste o valor conforme necessário */
 }
