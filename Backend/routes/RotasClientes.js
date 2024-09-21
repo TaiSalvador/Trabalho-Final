@@ -1,26 +1,26 @@
 const express = require('express');
 const router = express.Router();
-const produtoController = require('../controller/ControladorProdutos');
+const clienteController = require('../controller/ControladorClientes')
 
-// Rota para criar um novo produto
-router.post('/produtos', produtoController.createProduto);
+// Rota para criar um novo cliente
+router.post('/clientes', clienteController.createClientes);
 
-// Rota para obter todos os produtos
-router.get('/produtos', produtoController.getAllProdutos);
+// Rota para obter todos os clientes
+router.get('/clientes', clienteController.getAllClientes);
 
-// Rota para obter um produto pelo ID
-router.get('/produtos/:id', produtoController.getProdutoById);
+// Rota para obter um cliente pelo ID
+router.get('/clientes/:id', clienteController.getClientesById);
 
-// Rota para atualizar um produto
-router.put('/produtos/:id', produtoController.updateProduto);
+// Rota para atualizar um cliente
+router.put('/clientes/:id', clienteController.updateClientes);
 
-// Rota para deletar um produto
-router.delete('/produtos/:id', produtoController.deleteProduto);
+// Rota para deletar um cliente
+router.delete('/clientes/:id', clienteController.deleteClientes);
 
 // Rota para registrar entrada de estoque
-// router.post('/produtos/:id/entrada', ProdutoController.registrarEntrada);
+// router.post('/clientes/:id/entrada', clienteController.registrarEntrada);
 
 // Rota para registrar saída de estoque
-// router.post('/produtos/:id/saida', ProdutoController.registrarSaida);
+// router.post('/clientes/:id/saida', clienteController.registrarSaida);
 
 module.exports = router;
