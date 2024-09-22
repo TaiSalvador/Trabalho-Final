@@ -1,0 +1,15 @@
+#page-header{
+    background-image: url('imagens/Home/banner.jpg');
+    width: 1355px;
+    height: 250px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2, #page-header p {
+    color: #fff;
+}
