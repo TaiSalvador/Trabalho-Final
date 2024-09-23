@@ -58,6 +58,33 @@ button {
 button:hover{
     background-color: rgb(255, 255, 255, 0.8);
 }
-.icon {
-    margin-left: -50px; /* Ajuste o valor conforme necessário */
+#nav-tools{
+    display: flex;
+    flex-direction: row;
+ 
+}
+#nav-tools a {
+    display: flex;
+    place-items: center;
+    color: #fff;
+}
+#nav-tools span {
+    background-color: red;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    position: relative;
+    bottom: 8px;
+    right: 10px;
+}
+#wishlist-link {
+    margin-left: 15px;
+}
+.cta {
+    margin-right: 10px;
 }
