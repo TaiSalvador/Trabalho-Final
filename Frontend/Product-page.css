@@ -7,7 +7,7 @@
 }
 
 /* Isso é o css do header*/
-li, a{
+ li, a{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -93,35 +93,39 @@ button:hover{
 .cta {
     margin-right: 10px;
 }
+
+
+
+
 /* Isso é o css da página*/
 
 body{
     width: 100%;
 }
 
-h1 {
+#product1 h1 {
     font-size: 50px;
     line-height: 64px;
     color: #222;
 }
 
-h2 {
+#product1 h2 {
     font-size: 46px;
     line-height: 54px;
     color: #222;
 }
 
-h4{
+#product1 h4{
     font-size: 20px;
     color: #222;
 }
 
-h6 {
+#product1 h6 {
     font-weight: 700;
     font-size: 12px;
 }
 
-p {
+#product1 p {
     font-size: 16px;
     color: #465b52;
     margin: 15px 0 20px 0;
@@ -262,4 +266,110 @@ p {
 #pagination a i {
     font-size: 16px;
     font-weight: 600;
+}
+
+
+
+/* Isso é o Footer */
+footer{
+    background-color: black;
+    position: relative;
+    width: 100%;
+    min-height: 250px;
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    min-height: 10vh;
+}
+.container-footer {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .col {
+    min-width: 250px;
+    color: #f2f2f2f2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0 2rem;
+}
+.col .logo{
+    width: 100px;
+    margin-bottom: 10px;
+}
+.col h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #CCB43E;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.col h3::after{
+    content: '';
+    height: 3px;
+    width: 0px;
+    background-color: #CCB43E;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+.col h3:hover::after{
+    width: 30px;
+}
+.col .social a i{
+    color: #CCB43E;
+    margin-top: 2rem;
+    margin-right: 5px;
+    transition: 0.3s ease;
+}
+.col .social a i:hover{
+    transform: scale(1.5);
+    filter: grayscale(25);
+}
+.col .links a {
+    display: block;
+    text-decoration: none;
+    color: #f2f2f2f2;
+    margin-bottom: 5px;
+    position:relative;
+    transition: 0.3s ease;
+}
+.col .links a::before{
+    content: '';
+    height: 16px;
+    width: 3px;
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    background-color: #CCB43E;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+.col .links a:hover::before{
+    opacity: 1;
+}
+.col .links a:hover{
+    transform: translateX(-8px);
+    color: #CCB43E;
+}
+.col .contact-detalis{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.col .concact-details i{
+    
+    margin-right: 15px;
+}
+.col p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
