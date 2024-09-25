@@ -22,6 +22,9 @@ const clientesRoutes = require('./routes/RotasClientes');
 
 // Usar rotas
  app.use('/api', produtosRoutes);
+ app.use('/api', agendamentosRoutes);
+ app.use('/api', servicosRoutes);
+ app.use('/api', clientesRoutes);
 
 // Iniciar o servidor
 const PORT = process.env.PORT || 3000;
