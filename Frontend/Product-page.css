@@ -249,7 +249,8 @@ body{
     right: 10px;
 }
 #product1 .pro .cart.in-cart {
-    color: red; 
+    color: #cce7d0;
+    border: 1px solid #00be1d;
 }
 
 #pagination {
