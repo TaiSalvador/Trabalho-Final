@@ -23,6 +23,9 @@ produto.init({
     },
     marca: {
         type: DataTypes.STRING
+    },
+    linkimg: {
+        type: DataTypes.STRING
     }
 }, {
     sequelize,
