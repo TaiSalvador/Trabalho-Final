@@ -11,8 +11,8 @@
 </head>
 
 <body>
-
     <div class="container" id="container">
+        <!-- Formulário de cadastro -->
         <div class="form-container sign-up">
             <div class="form">
                 <h1>Create Account</h1>
@@ -21,7 +21,7 @@
                     <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
                 </div>
-                <span>or use your email for registeration</span>
+                <span>or use your email for registration</span>
                 <input type="text" id="nome" placeholder="Name">
                 <input type="email" id="email" placeholder="Email">
                 <input type="password" id="senha" placeholder="Password">
@@ -29,6 +29,8 @@
                 <button onclick="cadastrarPessoa()">Sign Up</button>
             </div>
         </div>
+
+        <!-- Formulário de login -->
         <div class="form-container sign-in">
             <div class="form">
                 <h1>Sign In</h1>
@@ -37,28 +39,31 @@
                     <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
                 </div>
-                <span>or use your email password</span>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <a href="#">Forget Your Password?</a>
-                <a href="Header.html"><button>Sign In</button></a>
+                <span>or use your email for login</span>
+                <input type="email" id="email-login" placeholder="Email">
+                <input type="password" id="senha-login" placeholder="Password">
+                <a href="#">Forgot Your Password?</a>
+                <button onclick="login()">Sign In</button>
             </div>
         </div>
+
+        <!-- Alternador de formulários -->
         <div class="toggle-container">
             <div class="toggle">
                 <div class="toggle-panel toggle-left">
                     <h1>Welcome Back!</h1>
-                    <p>Enter your personal details to use all of site features</p>
+                    <p>Enter your personal details to use all site features</p>
                     <button class="hidden" id="login">Sign In</button>
                 </div>
                 <div class="toggle-panel toggle-right">
                     <h1>Hello!</h1>
-                    <p>Register with your personal details to use all of site features</p>
+                    <p>Register with your personal details to use all site features</p>
                     <button class="hidden" id="register">Sign Up</button>
                 </div>
             </div>
         </div>
     </div>
+
     
 
     <script src="Login-e-create.js"></script>
