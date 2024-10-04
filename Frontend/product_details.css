@@ -198,6 +198,7 @@ footer{
     align-items: center;
     flex-direction: column;
     min-height: 5vh;
+    margin-top: 12.5vh;
 }
 .container-footer {
     max-width: 1140px;
