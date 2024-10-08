@@ -100,7 +100,6 @@ footer{
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    min-height: 100vh;
 }
 .container-footer {
     max-width: 1140px;
@@ -187,3 +186,4 @@ footer{
 .col .concact-details i{
     margin-right: 15px;
 }
+

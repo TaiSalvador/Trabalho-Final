@@ -59,27 +59,39 @@ const ClientesController = {
         }
     },
 
-    login: async (req, res) => {
-        try {
-            const cliente = await Clientes.findOne({
-                where: {
-                    email: req.body.email // Usa o e-mail que veio do frontend
+        login: async (req, res) => {
+            try {
+                const { email, senha } = req.body;
+    
+                console.log('Email recebido:', email);
+                console.log('Senha recebida:', senha);
+    
+                // Procura o cliente pelo email
+                const cliente = await Clientes.findOne({
+                    where: { email: email }
+                });
+    
+                if (!cliente) {
+                    return res.status(400).send('Email ou senha incorretos');
                 }
-            });
-
-            if (cliente && req.body.senha === cliente.senha) {
-                res.json(cliente);  // Se o login for bem-sucedido
-            } else {
-                res.status(400).send('Email ou senha incorretos');
+    
+                // Compara a senha recebida com a senha armazenada (hash)
+                const senhaValida = await bcrypt.compare(senha, cliente.senha);
+    
+                if (!senhaValida) {
+                    return res.status(400).send('Email ou senha incorretos');
+                }
+    
+                res.json({ message: 'Login bem-sucedido!', cliente: cliente });
+            } catch (error) {
+                console.error('Erro no login:', error.message);
+                res.status(500).send(error.message);
             }
-        } catch (error) {
-            res.status(500).send(error.message);
         }
-    },
+    }
 
     // Implementação das funções de controle de estoque
     // registrarEntrada e registrarSaida
     // ... (a ser implementado)
-};
 
 module.exports = ClientesController;

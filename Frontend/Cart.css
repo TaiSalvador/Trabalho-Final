@@ -1,11 +1,11 @@
-@import 'nav.css';
-@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* Isso é o Header*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Isso é o css da Header*/
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+   
 }
 li, a{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -93,103 +93,111 @@ button:hover{
     margin-right: 10px;
 }
 
-/* Isso é o css da página*/
+/* Isso é a página*/
 
-.product-container {
-    padding: 0 10vw;
+
+.container {
     display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
+    margin: 3rem 150px;
 }
 
-.product-container ::-webkit-scrollbar {
-    display: none;
-
+.cart {
+    width: 65%;
+    background-color: #f2f2f2;
 }
-
-.product-card {
-    flex: 0 0 auto;
-    width: 250px;
-    height: 450px;
-    margin-right: 40px;
-}
-
-.product-image{
-    position: relative;
-    width: 100%;
-    height: 350px;
-    overflow: hidden;
-}
-.product-thumb{
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    
-}
-.Discount-tag{
-    position: absolute;
-    background:#fff ;
-    padding:5px;
-    border-radius: 5px;
-    color: #ff7d7d;
-    right: 10px;
-    top: 10px;
-    text-transform: capitalize;
-}
-.card-btn{
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+.top {
+    display: flex;
+    justify-content: space-between;
     padding: 10px;
-    width: 90%;
-    text-transform: capitalize;
+    margin: 30px 0;
+}
+
+table {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.table-head {
+    color: white;
+    background-color: black;
+}
+
+head-img {
+    text-align: left;
+    padding-left: 7px;
+}
+.summary {
+    background-color: #f2f2f2;
+    width: 35%;
+    margin-left: 20px;
+}
+
+.detail {
+    margin: 10px 0;
+    padding: 0 10px;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+input {
     border: none;
     outline: none;
-    background: #fff;
-    border-radius: 5px;
-    transition: 0.5s;
+    width: 100%;
+    height: 40px;
+    margin: 15px 0;
+    padding: 7px;
+}
+
+.checkout {
+    width: 100%;
+    border: none;
+    background-color: #CCB43E;
+    padding: 8px 30px;
+    color: white;
+    border-radius: 3px;
     cursor: pointer;
-    opacity: 0;
+    margin-bottom: 15px;
 }
 
-.product-card:hover .card-btn{
-    opacity: 1;
-}
-
-.card-btn :hover{
-    background: #efefef;
-}
-.product-info{
-    width: 100%;
-    height: 100px;
-    padding-top: 10px;
-}
-
-.product-brand{
-    text-transform: uppercase;
-}
-
-.product-short-des{
-    width: 100%;
-    height: 20px;
-    line-height: 20px;
-    overflow: hidden;
-    opacity: 0.5s;
-    text-transform: capitalize;
-    margin: 5px 0;
-}
-.prince{
-    font-weight: 900;
-    font-size: 20px;
+.firt-btn:hover, .checkout:hover{
+    background-color: #333;
 
 }
-.actual-prince{
-    margin-left: 20px;
-    opacity: 0.5;
-    text-decoration: line-through;
+.firt-btn{
+        border: none;
+    background-color: #CCB43E;
+    padding: 8px 30px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 15px;
 }
-
+.img-box {
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #747474;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img {
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+.fa-trash {
+    color: #CCB43E;
+}
+.fa-trash:hover{
+    color: #333;
+}
 
 /* Isso é o Footer */
 footer{

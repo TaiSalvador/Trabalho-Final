@@ -25,7 +25,7 @@
                 <input type="text" id="nome" placeholder="Name">
                 <input type="email" id="email" placeholder="Email">
                 <input type="password" id="senha" placeholder="Password">
-                <input type="text" id="cpf" placeholder="CPF">
+                <input type="text" id="cpf" placeholder="CPF" data-maksa="###.###.###-##">
                 <button onclick="cadastrarPessoa()">Sign Up</button>
             </div>
         </div>
@@ -65,8 +65,42 @@
     </div>
 
     
+    <script src="Login-e-create.js">
+ 
+    async function login() {
+    const email = document.getElementById('email-login').value;
+    const senha = document.getElementById('senha-login').value;
 
-    <script src="Login-e-create.js"></script>
+    const cliente = {
+        email: email,
+        senha: senha
+    };
+
+    try {
+        const response = await fetch('http://localhost:3000/api/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(cliente)
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+            console.log('Login bem-sucedido:', data);
+
+            // Aqui você pode redirecionar o usuário para uma página principal
+            window.location.href = '/pagina_principal.html';
+        } else {
+            throw new Error('Email ou senha incorretos');
+        }
+    } catch (error) {
+        console.error('Erro:', error);
+        alert(error.message); // Mostra a mensagem de erro ao usuário
+    }
+}
+
+    </script>
 </body>
 
 </html>
