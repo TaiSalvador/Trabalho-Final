@@ -59,7 +59,7 @@ fetch('http://localhost:3000/api/produtos')
                     </div>
                     <h4>${produto.preco}</h4>
                 </div>
-                <a href="#"><i class='bx bx-cart cart'></i></a>
+                <button=""><i class='bx bx-cart cart'></i></button>
             `;
 
             proContainer.appendChild(cartaoProduto);
@@ -68,3 +68,36 @@ fetch('http://localhost:3000/api/produtos')
     .catch(error => {
         console.error('Erro ao buscar produtos:', error);
     });
+
+    // Função para adicionar produto ao carrinho
+function addToCart(produto) {
+    // Recupera o carrinho do localStorage ou cria um novo array se estiver vazio
+    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+    // Adiciona o produto ao carrinho
+    carrinho.push(produto);
+
+    // Salva o carrinho atualizado no localStorage
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+}
+
+proContainer.addEventListener('click', (event) => {
+    // Previne o comportamento padrão de atualização da página
+    if (event.target.closest('.cart')) {
+        event.preventDefault();  // Evita o recarregamento da página
+
+        const produtoElement = event.target.closest('.pro');
+        const productId = produtoElement.dataset.id; // id do produto
+
+        // Busca as informações do produto
+        const produto = {
+            id: productId,
+            linkimg: produtoElement.querySelector('img').src,
+            nome: produtoElement.querySelector('h5').textContent,
+            preco: parseFloat(produtoElement.querySelector('h4').textContent.replace('R$', '').trim())
+        };
+
+        // Adiciona o produto ao carrinho
+        addToCart(produto);
+    }
+});
