@@ -76,9 +76,8 @@ const ClientesController = {
                 }
     
                 // Compara a senha recebida com a senha armazenada (hash)
-                const senhaValida = await bcrypt.compare(senha, cliente.senha);
     
-                if (!senhaValida) {
+                if (senha != cliente.senha) {
                     return res.status(400).send('Email ou senha incorretos');
                 }
     

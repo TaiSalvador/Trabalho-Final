@@ -51,4 +51,33 @@ function cadastrarPessoa() {
     });
 }
 
+function login() {
+    const email = document.getElementById('email').value;
+    const senha = document.getElementById('senha').value;
 
+    const cliente = {
+        email: email,
+        senha: senha,
+    };
+
+    fetch('http://localhost:3000/api/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(cliente)
+    })
+    .then(response => {
+        if (response.ok) {
+            return response.json();
+        }
+        throw new Error('Erro ao fazer login');
+    })
+    .then(data => {
+        console.log('Bem vindo!');
+        window.location.href="Product-page.html"
+    })
+    .catch(error => {
+        console.error('Erro:', error);
+    });
+}
