@@ -1,0 +1,262 @@
+/* Isso é o header */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li, a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:black;
+    text-decoration: none;
+}
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 54px;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    text-decoration: underline;
+    color: #CCB43E
+}
+button {
+    padding: 9px 25px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgb(255, 255, 255, 0.8);
+}
+#nav-tools{
+    display: flex;
+    flex-direction: row;
+ 
+}
+#nav-tools a {
+    display: flex;
+    place-items: center;
+    color: #fff;
+}
+#nav-tools span {
+    background-color: red;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    position: relative;
+    bottom: 8px;
+    right: 10px;
+}
+#wishlist-link {
+    margin-left: 15px;
+}
+.cta {
+    margin-right: 10px;
+}
+
+/* Isso é o css da página */
+
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.history {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 126px ;
+    padding-left: 160px;
+    background-color: #fff;
+
+}
+
+.content {
+    font-family: "Spartan", sans-serif;
+    flex: 1;
+   
+}
+
+.content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    width: 600px;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.images img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.mission-vision-values {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.mvv-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.mvv-item {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.mvv-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f7c045;
+}
+
+.mvv-item p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+
+/* Isso é o Footer */
+footer{
+    background-color: black;
+    position: relative;
+    width: 100%;
+    min-height: 250px;
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+.container-footer {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col {
+    min-width: 250px;
+    color: #f2f2f2f2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0 2rem;
+}
+.col .logo{
+    width: 100px;
+    margin-bottom: 10px;
+}
+.col h3 {
+    color: #CCB43E;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.col h3::after{
+    content: '';
+    height: 3px;
+    width: 0px;
+    background-color: #CCB43E;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+.col h3:hover::after{
+    width: 30px;
+}
+.col .social a i{
+    color: #CCB43E;
+    margin-top: 2rem;
+    margin-right: 5px;
+    transition: 0.3s ease;
+}
+.col .social a i:hover{
+    transform: scale(1.5);
+    filter: grayscale(25);
+}
+.col .links a {
+    display: block;
+    text-decoration: none;
+    color: #f2f2f2f2;
+    margin-bottom: 5px;
+    position:relative;
+    transition: 0.3s ease;
+}
+.col .links a::before{
+    content: '';
+    height: 16px;
+    width: 3px;
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    background-color: #CCB43E;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+.col .links a:hover::before{
+    opacity: 1;
+}
+.col .links a:hover{
+    transform: translateX(-8px);
+    color: #CCB43E;
+}
+.col .contact-detalis{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.col .concact-details i{
+    margin-right: 15px;
+}
