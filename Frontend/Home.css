@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.login-cart {
+    display: flex;
+    align-items: center;
+}
+
+.login-cart button {
+    margin-right: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+.cart-icon {
+    font-size: 24px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.services {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.service-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 150px;
+    text-align: center;
+}
+
+.service-item img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    border-radius:  50%;
+
+}
+
+.products {
+    padding: 50px;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.product-carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.product-item {
+    min-width: 200px;
+    margin: 0 90px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-item img {
+    width: 336px;
+    height: 444px;
+   justify-content: space-around;
+}
+
+.carousel-prev, .carousel-next {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-top: 50px;
+}
