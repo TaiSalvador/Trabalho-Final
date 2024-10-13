@@ -105,6 +105,8 @@ h1 {
     padding-top: 126px ;
     padding-left: 160px;
     background-color: #fff;
+    align-items: flex-start; /* Alinha as imagens ao topo do texto */
+    gap: 20px; /* Adiciona espaço entre o texto e as imagens */
 
 }
 
@@ -125,6 +127,11 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     gap: 10px;
+    width: 498px; 
+    height: 409px; 
+    left: 778px; 
+    top: 378px; 
+    position: absolute
 }
 
 .images img {
@@ -134,7 +141,7 @@ h1 {
 }
 
 .mission-vision-values {
-    background-color: #333;
+    background-color: black;
     color: #fff;
     padding: 40px 20px;
     text-align: center;
