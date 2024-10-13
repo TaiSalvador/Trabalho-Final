@@ -127,17 +127,12 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     gap: 10px;
-    width: 498px; 
-    height: 409px; 
-    left: 778px; 
-    top: 378px; 
-    position: absolute
 }
 
 .images img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
+    width: 498px;
+    height: 409px;
+    border-radius: auto;
 }
 
 .mission-vision-values {
