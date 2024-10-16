@@ -51,9 +51,15 @@ function cadastrarPessoa() {
     });
 }
 
+// Função para realizar login
 function login() {
-    const email = document.getElementById('email').value;
-    const senha = document.getElementById('senha').value;
+    const email = document.getElementById('email-login').value; // Campo de login
+    const senha = document.getElementById('senha-login').value; // Campo de senha
+
+    if (!email || !senha) {
+        alert("Por favor, preencha ambos os campos de e-mail e senha.");
+        return;
+    }
 
     const cliente = {
         email: email,
@@ -70,14 +76,19 @@ function login() {
     .then(response => {
         if (response.ok) {
             return response.json();
+        } else if (response.status === 401) {
+            throw new Error('E-mail ou senha incorretos');
         }
         throw new Error('Erro ao fazer login');
     })
     .then(data => {
         console.log('Bem vindo!');
-        window.location.href="Product-page.html"
+        // Redireciona para a página de produtos após login bem-sucedido
+        window.location.href = "Home.html";
     })
     .catch(error => {
-        console.error('Erro:', error);
+        // Exibe mensagem de erro se as credenciais estiverem incorretas
+        console.error('Erro:', error.message);
+        alert(error.message);
     });
 }

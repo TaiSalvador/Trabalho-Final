@@ -1,149 +1,213 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços de Beleza</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="x-icon" href="imagens/Home/Salão_Além_do_Espelho__1_-removebg-preview.png">
     <link rel="stylesheet" href="Home.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Home</title>
 </head>
 <body>
+
     <header>
-       
-    </header>
+        <img class="logo" src="imagens/Home/Logo.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About us.html">Sobre Nós</a></li>
+                <li><a href="Service.html">Serviços</a></li>
+                <li><a href="Product-page.html">Produto</a></li>
+            </ul>
+        </nav>    
+          <a class="cta" href="Login-e-create.html"><button>Entrar</button></a>   
+      <div id="nav-tools">
+        <a id="cart-link" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" stroke="white" stroke-width="0.4"/> 
+        </svg>
+          <span>0</span>
+        </a>
+        <a id="wishlist-link" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"stroke="white" stroke-width="0.4"/>
+          </svg>
+          <span>0</span>
+        </a>
+        </div>
+      </header>
 
-    <section class="hero">
-        <img src="imagens/Home/telainicial.png" alt="Mulher com maquiagem">
-    </section>
+    <!-- Seção de Imagem Principal -->
+    <div class="hero-section">
+        <img src="imagens/Home/telainicial.png" alt="Cabelo" class="hero-image">
+        <button class="hero-btn">Agende Aqui</button>
+    </div>
 
-    <section class="services">
-        <h2>Nossos Serviços</h2>
-        <div class="service-items">
-            <div class="service-item">
-                <img src="imagens/Home/hidratacao profunda.jpg" alt="Cabelos">
-                <h3>Cabelos</h3>
-                <p>Cuidados e tratamentos personalizados para cada tipo de cabelo.</p>
+    <!-- Seção de Serviços -->
+    <section class="services-section">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <img src="imagens/Home/1.png" alt="Cabelos" class="service-icon">
+                <h3 class="service-title">Cabelos</h3>
+                <p class="service-description">Cuidando e tratando seu cabelo para cada tipo de cliente.</p>
             </div>
-            <div class="service-item">
-                <img src="imagens/Home/Festas.png" alt="Manicure">
-                <h3>Manicure</h3>
-                <p>Cuidados para mãos e unhas com produtos de alta qualidade.</p>
+            <div class="service-card">
+                <img src="imagens/Home/4.png" alt="Manicure" class="service-icon">
+                <h3 class="service-title">Manicure</h3>
+                <p class="service-description">Cuidando bem de suas unhas com produtos de alta qualidade.</p>
             </div>
-            <div class="service-item">
-                <img src="imagens/Home/mechas.jpg" alt="Maquiagem">
-                <h3>Maquiagem</h3>
-                <p>Realce sua beleza natural com nossa maquiagem profissional.</p>
+            <div class="service-card">
+                <img src="imagens/Home/2.png" alt="Maquiagem" class="service-icon">
+                <h3 class="service-title">Maquiagem</h3>
+                <p class="service-description">Realce sua beleza com nossa equipe especializada em maquiagem profissional.</p>
             </div>
-            <div class="service-item">
-                <img src="imagens/Home/descolaracao global.jpg" alt="Depilação">
-                <h3>Depilação</h3>
-                <p>Métodos suaves e eficazes para todos os tipos de pele.</p>
+            <div class="service-card">
+                <img src="imagens/Home/5.png" alt="Depilação" class="service-icon">
+                <h3 class="service-title">Depilação</h3>
+                <p class="service-description">Métodos simples e eficazes para todos os tipos de pele.</p>
             </div>
-            <div class="service-item">
-                <img src="imagens/Home/Tranças.jpg" alt="Sobrancelhas e Cílios">
-                <h3>Sobrancelhas e Cílios</h3>
-                <p>Realce o olhar com design de sobrancelhas perfeito.</p>
+            <div class="service-card">
+                <img src="imagens/Home/3.png" alt="Sobrancelhas e Cílios" class="service-icon">
+                <h3 class="service-title">Sobrancelhas e Cílios</h3>
+                <p class="service-description">Realce o olhar com design de sobrancelhas e extensão de cílios.</p>
             </div>
-            <div class="service-item">
-                <img src="imagens/Home/Definitiva.webp" alt="Pacote Noiva">
-                <h3>Pacote Noiva</h3>
-                <p>Beleza completa para um casamento inesquecível.</p>
+            <div class="service-card">
+                <img src="imagens/Home/6.png" alt="Pacote Noiva" class="service-icon">
+                <h3 class="service-title">Pacote Noiva</h3>
+                <p class="service-description">Beleza completa para seu casamento dos sonhos.</p>
             </div>
         </div>
     </section>
 
-    <section class="products">
-        <h2>Produtos</h2>
-        <div class="carousel-container">
-            <button class="carousel-prev">❮</button>
-            <div class="product-carousel">
-                <div class="product-item">
-                    <img src="imagens/Products/f1.png" alt="Shampoo">
-                    <h3>Kit Shampoo e Condicionador</h3>
-                    <p>R$ 269,90</p>
+    <h2 class="section-title">Nossos Produtos</h2>
+    <div class="carousel"> 
+        <button id="pre-btn-1" class="pre-btn"><img src="imagens/Home/seta.png" alt=""></button>
+        <div class="product-container product-container-1">
+            <!-- Seus produtos aqui -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="imagens/Products/f1.png" class="product-thumb">
                 </div>
-                <div class="product-item">
-                    <img src="imagens/Products/f2.png" alt="Máscara Capilar">
-                    <h3>Máscara Alfaparf</h3>
-                    <p>R$ 84,90</p>
+                <div class="product-info">
+                    <h3 class="product-short-des">Kit Shampoo e Condicionador</h3>
+                    <span class="price">R$ 260,90</span>
                 </div>
-                <div class="product-item">
-                    <img src="imagens/Products/f3.png" alt="Condicionador">
-                    <h3>Condicionador Amend</h3>
-                    <p>R$ 59,90</p>
-                </div>
-                <div class="product-item">
-                    <img src="imagens/Products/f4.png" alt="Máscara Capilar">
-                    <h3>Máscara Alfaparf</h3>
-                    <p>R$ 84,90</p>
-                </div>
-                <div class="product-item">
-                    <img src="imagens/Products/f5.png" alt="Máscara Capilar">
-                    <h3>Máscara Alfaparf</h3>
-                    <p>R$ 84,90</p>
-                </div>
-                <div class="product-item">
-                    <img src="imagens/Products/f10.png" alt="Máscara Capilar">
-                    <h3>Máscara Alfaparf</h3>
-                    <p>R$ 84,90</p>
-                </div>
-                <div class="product-item">
-                    <img src="imagens/Products/f10.png" alt="Máscara Capilar">
-                    <h3>Máscara Alfaparf</h3>
-                    <p>R$ 84,90</p>
-                </div>
-                <div class="product-item">
-                    <img src="imagens/Products/f10.png" alt="Máscara Capilar">
-                    <h3>Máscara Alfaparf</h3>
-                    <p>R$ 84,90</p>
-                </div>
-                <div class="product-item">
-                    <img src="imagens/Products/f10.png" alt="Máscara Capilar">
-                    <h3>Máscara Alfaparf</h3>
-                    <p>R$ 84,90</p>
-                </div>
-                <div class="product-item">
-                    <img src="imagens/Products/f10.png" alt="Máscara Capilar">
-                    <h3>Máscara Alfaparf</h3>
-                    <p>R$ 84,90</p>
-                </div>
-                <div class="product-item">
-                    <img src="imagens/Products/f10.png" alt="Máscara Capilar">
-                    <h3>Máscara Alfaparf</h3>
-                    <p>R$ 84,90</p>
-                </div>
-                <div class="product-item">
-                    <img src="imagens/Products/f10.png" alt="Máscara Capilar">
-                    <h3>Máscara Alfaparf</h3>
-                    <p>R$ 84,90</p>
-                </div>
-                <div class="product-item">
-                    <img src="imagens/Products/f10.png" alt="Máscara Capilar">
-                    <h3>Máscara Alfaparf</h3>
-                    <p>R$ 84,90</p>
-                </div>
-                <div class="product-item">
-                    <img src="imagens/Products/f10.png" alt="Máscara Capilar">
-                    <h3>Máscara Alfaparf</h3>
-                    <p>R$ 84,90</p>
-                </div>
-                <div class="product-item">
-                    <img src="imagens/Products/f10.png" alt="Máscara Capilar">
-                    <h3>Máscara Alfaparf</h3>
-                    <p>R$ 84,90</p>
-                </div>
-                
-                
-                <!-- Adicione mais produtos conforme necessário -->
             </div>
-            <button class="carousel-next">❯</button>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="imagens/Products/f2.png" class="product-thumb">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-short-des">Condicionador Amend Marula Fabulous Nutrition 250ml</h3>
+                    <span class="price">R$ 38,90</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="imagens/Products/f3.png" class="product-thumb">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-short-des">Máscara Alfaparf Semi di Lino Smooth 200ml</h3>
+                    <span class="price">R$ 94,90</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="imagens/Products/f4.png" class="product-thumb">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-short-des">Queratina Líquida Lunell Keratin Restore 200ml</h3>
+                    <span class="price">R$ 59,90</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="imagens/Products/f5.png" class="product-thumb">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-short-des">Kit de Tratamento Amend Millenar Óleos Indianos Pequeno</h3>
+                    <span class="price">R$ 119,90</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="imagens/Products/f6.png" class="product-thumb">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-short-des">L'Oréal Professionnel Absolut Repair Kit Shampoo + Condicionador - Kit</h3>
+                    <span class="price">R$ 323,10</span>
+                </div>
+            </div>
         </div>
-    </section>
-
+        <button id="ntx-btn-1" class="ntx-btn"><img src="imagens/Home/seta.png" alt=""></button>
+    </div>
 
     <footer>
-       
+        <div class="container-footer">
+            <div class="row">
+                <div class="div col" id="company">
+                    <img src="imagens/Home/Footer.png" class="logo-footer">
+                    <p>No Além do Espelho, revelamos sua beleza com cuidado e atenção. 
+                        Transforme-se com nossos especialistas e descubra sua melhor versão!
+                    </p>
+                    <div class="div social">
+                        <a href="#"> <i class="fab fa-facebook"></i></a>
+                        <a href="#"> <i class="fab fa-instagram"></i></a>
+                        <a href="#"> <i class="fab fa-whatsapp"></i></a>
+                        <a href="#"> <i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+    
+    
+                <div class="div col" id="services">
+                    <div class="div links">
+                        <h3>Serviços</h3>
+                        <a href="#">Cabelos</a>
+                        <a href="#">Manicure</a>
+                        <a href="#">Maquiagem</a>
+                        <a href="#">Depilação</a>
+                        <a href="#">Sobrancelhas e Cílios</a>
+                        <a href="#">Pacote de noiva</a>
+                    </div>
+                </div>
+    
+    
+                <div class="div col" id="useful-links">
+                    <h3>Links</h3>
+                    <div class="links">
+                        <a href="Home.html">Home</a>
+                        <a href="About us.html">Sobre nós</a>
+                        <a href="Service.html">Serviços</a>
+                        <a href="Product-page.html">Produtos</a>
+                    </div>
+                </div>
+    
+    
+                <div class="div col" id="contact">
+                    <h3>Contato</h3>
+                    <div class="concact-details">
+                        <i class="fa-solid fa-map"></i>
+                        <p>FF-42, Procube Avenue, <br> NY, USA</br></p>
+                    </div>
+                    <div class="concact-details">
+                        <i class="fa fa-phone"></i>
+                        <p>+55 (47) 99118-4090</p>
+                    </div>
+                    <div class="concact-details">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>daianecorrea@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <script src="home.js"></script>
+    <script src="Service.js"></script>
 </body>
 </html>
+

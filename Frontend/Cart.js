@@ -21,18 +21,21 @@ function displaycart() {
 
     // Exibe os produtos no carrinho
     document.getElementById("root").innerHTML = carrinho.map((item, index) => {
+        // Certifica-se de que o preço seja um número
+        const preco = parseFloat(item.preco);
+
         return (
             `<tr>
                 <td width='150'><div class='img-box'><img class='img' src='${item.linkimg}'/></div></td>
                 <td width='200'><p>${item.nome}</p></td>
-                <td width='200'><h2 style='font-size:15px; color:red;'>R$ ${item.preco.toFixed(2)}</h2></td>
+                <td width='200'><h2 style='font-size:15px; color:red;'>R$ ${!isNaN(preco) ? preco.toFixed(2) : 'Preço inválido'}</h2></td>
                 <td width='80'><i class='fa-solid fa-trash' onclick='delElement(${index})'></i></td>
             </tr>`
         );
     }).join('');
 
     // Atualiza o total
-    const total = carrinho.reduce((acc, item) => acc + item.preco, 0);
+    const total = carrinho.reduce((acc, item) => acc + parseFloat(item.preco || 0), 0);
     document.getElementById("totalA").textContent = `R$ ${total.toFixed(2)}`;
     document.getElementById("totalB").textContent = `R$ ${total.toFixed(2)}`;
 

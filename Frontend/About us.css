@@ -1,9 +1,9 @@
-/* Isso é o header */
-
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Spartan", sans-serif;
 }
 li, a{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -91,77 +91,211 @@ button:hover{
     margin-right: 10px;
 }
 
-/* Isso é o css da página */
-
-
-h1 {
-    font-size: 2.5rem;
-    color: #333;
+/* Seção Nossa História */
+.nossa-historia {
+    padding: 50px 10%;
+    background-color: white;
 }
 
-.history {
+.section-title2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+    text-align: left;
+}
+.section-title1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.historia-container {
     display: flex;
     justify-content: space-between;
-    padding-top: 126px ;
-    padding-left: 160px;
-    background-color: #fff;
-    align-items: flex-start; /* Alinha as imagens ao topo do texto */
-    gap: 20px; /* Adiciona espaço entre o texto e as imagens */
-
+    align-items: flex-start;
+    gap: 30px;
 }
 
-.content {
-    font-family: "Spartan", sans-serif;
+.historia-texto {
     flex: 1;
-   
+    line-height: 1.8;
+    color: #555;
+    font-size: 16px;
 }
 
-.content p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    width: 600px;
-}
-
-.images {
+.historia-imagens {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
 }
 
-.images img {
-    width: 498px;
-    height: 409px;
-    border-radius: auto;
+.historia-imagens img {
+    width: 100%;
+    border-radius: 10px;
 }
 
-.mission-vision-values {
+/* Seção Missão, Visão e Valores */
+.missao-visao-valores {
     background-color: black;
-    color: #fff;
-    padding: 40px 20px;
+    color: white;
+    padding: 50px 10%;
     text-align: center;
+}
+
+.section-divider {
+    width: 100px;
+    height: 3px;
+    background-color: white;
+    margin: 10px auto 40px;
 }
 
 .mvv-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    gap: 30px;
 }
 
 .mvv-item {
     flex: 1;
-    margin: 0 20px;
+    max-width: 250px;
+}
+
+.mvv-icon {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
 }
 
 .mvv-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #f7c045;
+    font-size: 22px;
+    margin-bottom: 15px;
 }
 
 .mvv-item p {
-    font-size: 1.1rem;
+    font-size: 16px;
     line-height: 1.5;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+}
+.section-title {
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #333; 
+}
+.product-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: start;
+    margin-top: 40px;
+    margin-bottom: 20px; 
+    margin-left: 140px;
+}
+
+.product-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 80%; 
+    margin: 0 auto;
+}
+.product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+}
+.product-image {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.product-thumb{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.card-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border:none;
+    outline: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+.product-card:hover .card-btn{
+    opacity: 1;
+}
+.product-info{
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    text-align: center;
+}
+.product-brand{
+    text-transform: uppercase;
+}
+.product-short-des{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+.price {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.pre-btn, .ntx-btn {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 8;
+}
+
+.pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.ntx-btn {
+    right: 0;
+    
+}
+
+.product-container::-webkit-scrollbar {
+    display: none; 
 }
 
 
@@ -202,6 +336,7 @@ footer{
 }
 .col h3 {
     color: #CCB43E;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 20px;
     position: relative;
     cursor: pointer;
@@ -261,4 +396,7 @@ footer{
 }
 .col .concact-details i{
     margin-right: 15px;
+}
+.col p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
